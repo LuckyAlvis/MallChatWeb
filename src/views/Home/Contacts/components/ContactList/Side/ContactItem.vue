@@ -8,6 +8,9 @@ const props = defineProps<{ item: ContactItem }>()
 
 const { item } = toRefs(props)
 
+
+
+  
 const currentUid = computed(() => item?.value?.uid)
 const currentUser = useUserInfo(currentUid.value)
 </script>
